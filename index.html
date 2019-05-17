@@ -39,63 +39,7 @@
         <h3 class="text-muted">Cool Charts</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>OAuth 2.0 Demonstration</h1>
-        <p class="lead">This sample page shows how to connect you Authorize.Net account to Cool Charts so that we can visualize your data with a Cooooool Chart.</p>
-        <p><a class="btn btn-lg btn-primary" href="https://sandbox.authorize.net/oauth/authorize?client_id=dzCLMFOoS7&scope=read,write&redirect_uri=https://google.com&sub=oauth&state=123456" role="button">Connect to Authorize.Net</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Overview</h4>
-          <p>This page demonstrates the retrieval of an OAuth 2.0 Access Token which can be used by an Authorize.Net partner (client application - see below) to access Authorize.Net ON BEHALF OF an Authorize.Net merchant (Resource Owner - see below).</p>
-
-          <h4>OAuth 2.0 Clients</h4>
-          <p>In OAuth 2.0 nomenclature an Authorize.Net partner application (e.g. shopping cart, analytics application, invoicing solution, etc) is referred to as a Client Application.</p>
-
-          <h4>OAuth 2.0 Resource Owners</h4>
-          <p>In the Authorize.Net ecosystem, the Resource Owners are merchants.  The client applications use the Authorize.Net OAuth 2.0 flow to transact with the merchant resources via our APIs. E.g. retrieve merchant subscriptions data.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Step 1:</h4>
-          <p>Connect with the Authorize.Net OAuth 2.0 Authorization endpoint (see source behind button above).</p>
-
-          <h4>Step 2:</h4>
-          <p>Use the Authorization Code returned from Step 1 to retrieve an Access Token (and Refresh Token) from our /token RESTful endpoint.</p>
-          <p>POST https://access.authorize.net/apiauthservice/v1/oauth/token</p>
-          <p>Content-Type: application/x-www-form-urlencoded</p>
-          <p>grant_type=authorization_code&code=M19rNl&client_id=0puCUxYrM7&platform=2</p>
-
-          <h4>Step 3:</h4>
-          <p>Use the Access Code from Step 2 to access the Authorize.Net API : https://developer.authorize.net/api/reference</p>
-          <p>NOT YET AVAILABLE</p>
-          <p><b>Sample Request</b></p>
-          <p>
-            <code>
-              {
-    "authenticateTestRequest": {
-        "merchantAuthentication": {
-            "accessToken": "eyJraWQiOiIyNmRjYjVkZTdlMmYwYTI0ODg0MjU1YjIwZWJjMGY0MSIsImFs ..."
-        }
-    }  
-}
-            </code>
-          </p>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- FOXYCART -->
-<script data-cfasync="false" src="https://cdn.foxycart.com/anetdemo/loader.js" async defer></script>
+     
 <!-- /FOXYCART -->
 <!-- link example -->
 <a href="https://anetdemo.foxycart.com/cart?name=Cool%20Example&price=10&color=red&code=sku123">Add a red Cool Example</a>
